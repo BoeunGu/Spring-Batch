@@ -31,4 +31,4 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
   batch:
     jdbc:
-      initialize-schema: always
+      initialize-schema: always # 애플리케이션 실행 시 항상 메타데이터 저장용 sql 스크립트 실행

@@ -15,7 +15,7 @@ import java.util.Date;
 public class JobRunner implements ApplicationRunner {
 
     @Autowired
-    private JobLauncher jobLauncher;
+    private JobLauncher jobLauncher; //Job을 실행시키는 요소
 
     @Autowired
     private Job job;
@@ -24,7 +24,7 @@ public class JobRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
 
         JobParameters jobParameters = new JobParametersBuilder()
-                .addString("name", "user1")
+                .addString("name", "user1") //Batch_Job_Excution_Parameter
 //                .addDate("reqDate", new Date())
                 .toJobParameters();
 
